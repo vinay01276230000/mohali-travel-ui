@@ -15,7 +15,6 @@ const brands = [
 ];
 
 const Partners = () => {
-  // Default active = Expedia (index 2)
   const [activeIndex, setActiveIndex] = useState(2);
 
   return (
@@ -25,7 +24,6 @@ const Partners = () => {
         <div className="flex flex-wrap justify-center items-center gap-16">
           {brands.map((brand, index) => {
             const isActive = activeIndex === index;
-
             return (
               <div
                 key={index}
@@ -35,7 +33,6 @@ const Partners = () => {
                   ${isActive ? "bg-white shadow-xl rounded-xl px-10 py-6 scale-110" : ""}
                 `}
               >
-                {/* SAME SIZE BOX */}
                 <div className="w-36 h-16 flex items-center justify-center">
                   <img
                     src={brand.img}

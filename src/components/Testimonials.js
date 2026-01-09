@@ -38,8 +38,6 @@ const Testimonials = () => {
   return (
     <section className="relative py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
-
-        {/* LEFT CONTENT */}
         <div>
           <p className="uppercase text-gray-500 tracking-widest text-sm mb-4">
             Testimonials
@@ -48,8 +46,6 @@ const Testimonials = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary leading-tight mb-12">
             What People Say <br /> About Us.
           </h2>
-
-          {/* DOTS */}
           <div className="flex gap-4">
             {testimonials.map((_, index) => (
               <span
@@ -62,13 +58,8 @@ const Testimonials = () => {
             ))}
           </div>
         </div>
-
-        {/* RIGHT TESTIMONIAL CARDS */}
         <div className="relative w-full max-w-md">
-
-          {/* ACTIVE CARD */}
           <div className="relative bg-white rounded-3xl shadow-2xl p-8 z-20">
-            {/* PROFILE IMAGE */}
             <img
               src={userImg}
               alt="user"
@@ -86,8 +77,6 @@ const Testimonials = () => {
               {testimonials[active].location}
             </p>
           </div>
-
-          {/* BACK CARD (PREVIEW / SHADOW CARD) */}
           <div className="absolute top-30 left-8 w-full bg-white rounded-3xl shadow-lg p-8 opacity-50 z-10">
             <h4 className="font-semibold text-primary">
               {testimonials[(active + 1) % testimonials.length].name}
@@ -96,8 +85,6 @@ const Testimonials = () => {
               {testimonials[(active + 1) % testimonials.length].location}
             </p>
           </div>
-
-          {/* ARROWS */}
           <div className="absolute right-[-60px] top-1/2 -translate-y-1/2 flex flex-col gap-4">
             <button
               onClick={prev}

@@ -13,36 +13,18 @@ const Subscribe = () => {
   };
 
   return (
-    <section className="py-32 bg-white">
+    <section className="py-10 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-
-        {/* MAIN CARD */}
         <div className="relative bg-[#f9f7fe] rounded-[40px] px-8 md:px-24 py-20 text-center">
-
-          {/* SEND ICON (ABOVE MAIN DIV) */}
           <img
             src={sendIcon}
             alt="send"
             className="absolute -top-6 -right-5 w-16 h-16 z-30"
           />
-
-          {/* LEFT CURVE */}
-          <div className="absolute -left-24 bottom-0 w-96 h-96 rounded-full border border-indigo-200 opacity-30"></div>
-          <div className="absolute -left-10 bottom-16 w-96 h-96 rounded-full border border-indigo-200 opacity-20"></div>
-
-          {/* RIGHT CURVE */}
-          <div className="absolute -right-24 top-0 w-96 h-96 rounded-full border border-indigo-200 opacity-30"></div>
-          <div className="absolute -right-10 top-16 w-96 h-96 rounded-full border border-indigo-200 opacity-20"></div>
-
-      
-
-          {/* TEXT */}
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Subscribe to get information, latest news and other
-            interesting offers about Jadoo
+            Subscribe to get information, latest news and other interesting
+            offers about Jadoo
           </h2>
-
-          {/* FORM */}
           <form
             onSubmit={handleSubmit}
             className="flex flex-col md:flex-row items-center justify-center gap-6"
@@ -72,7 +54,6 @@ const Subscribe = () => {
             </button>
           </form>
         </div>
-
       </div>
     </section>
   );

@@ -28,16 +28,12 @@ const TopDestinations = () => {
   return (
     <section className="relative py-24 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 text-center">
-
-        {/* HEADING */}
         <p className="text-gray-500 uppercase tracking-widest text-sm mb-2">
           Top Selling
         </p>
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-16">
           Top Destinations
         </h2>
-
-        {/* CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           {destinations.map((item, index) => (
             <div
@@ -45,7 +41,6 @@ const TopDestinations = () => {
               className="bg-white rounded-3xl overflow-hidden shadow-lg
               hover:shadow-2xl transition-all duration-300"
             >
-              {/* IMAGE */}
               <div className="h-72 overflow-hidden">
                 <img
                   src={item.image}
@@ -54,8 +49,6 @@ const TopDestinations = () => {
                   hover:scale-110 transition-transform duration-500"
                 />
               </div>
-
-              {/* CONTENT */}
               <div className="p-6 text-left">
                 <div className="flex justify-between items-center mb-3">
                   <h3 className="text-lg font-medium text-gray-800">
@@ -65,8 +58,6 @@ const TopDestinations = () => {
                     {item.price}
                   </span>
                 </div>
-
-                {/* DAYS WITH NAVIGATION ICON */}
                 <div className="flex items-center gap-2 text-gray-500 text-sm">
                   <img
                     src={navigation}
